@@ -4,7 +4,7 @@ const setaAvancar = document.getElementById('btn-avancar')
 let imagemAtual = 0
 
 if(imagemAtual === 0) {
-    setaVoltar.classList.add('desabilitar')
+    desabilitarSeta(setaVoltar)
 }
 
 setaAvancar.addEventListener('click', function(e){
@@ -14,20 +14,14 @@ setaAvancar.addEventListener('click', function(e){
     //têm imagens pra voltar
     if(imagemAtual !== imagens.length - 1) {
         imagemAtual++
-        setaVoltar.classList.remove('desabilitar')
+        habilitarSeta(setaVoltar)
     }
 
-    //remove o mostrar de todos os elementos pra que a imagem suma
-    imagens.forEach(imagem => {
-        imagem.classList.remove('mostrar')
-    });
-
-    //pega a imagem atual e define a classe mostrar pra que ela apareça
-    imagens[imagemAtual].classList.add('mostrar')
+    esconderImagensEMostrarImagemAtual()
 
     //se for a ultima imagem desabilita o clique da seta de avancar
     if(imagemAtual === imagens.length - 1) {
-        setaAvancar.classList.add('desabilitar')
+        desabilitarSeta(setaAvancar)
     }
 })
 
@@ -37,20 +31,32 @@ setaVoltar.addEventListener('click', function(e){
     //o botão de avançar, por que têm mais imagens pra avançar
     if(imagemAtual !== 0) {        
         imagemAtual--
-        setaAvancar.classList.remove('desabilitar')
+        habilitarSeta(setaAvancar)
     }    
     
-    //remove o mostrar de todos os elementos pra que a imagem suma
-    imagens.forEach(imagem => {
-        imagem.classList.remove('mostrar')
-    });
-
-    //pega a imagem atual e define a classe mostrar pra que ela apareça
-    imagens[imagemAtual].classList.add('mostrar')
+    esconderImagensEMostrarImagemAtual()
     
     //se for a primeira imagem desabilita o botão de voltar, 
     //por que não têm mais imagens pra voltar
     if(imagemAtual === 0) {
-        setaVoltar.classList.add('desabilitar')
+        desabilitarSeta(setaVoltar)
     }
 })
+
+function desabilitarSeta (seta) {
+    seta.classList.add('desabilitar')
+}
+
+function habilitarSeta (seta) {
+    seta.classList.remove('desabilitar')
+}
+
+function esconderImagensEMostrarImagemAtual() {
+    //remove o mostrar de todos os elementos pra que a imagem suma
+    imagens.forEach(imagem => {
+        imagem.classList.remove('mostrar')
+    })
+
+    //pega a imagem atual e define a classe mostrar pra que ela apareça
+    imagens[imagemAtual].classList.add('mostrar')
+}
