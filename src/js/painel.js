@@ -7,7 +7,8 @@ if(imagemAtual === 0) {
     setaVoltar.classList.add('desabilitar')
 }
 
-setaAvancar.addEventListener('click', function(){
+setaAvancar.addEventListener('click', function(e){
+    e.preventDefault()
     //se não for a última imagem, 
     //incrementa o contador e habilita a seta pra voltar, por que
     //têm imagens pra voltar
@@ -30,7 +31,8 @@ setaAvancar.addEventListener('click', function(){
     }
 })
 
-setaVoltar.addEventListener('click', function(){    
+setaVoltar.addEventListener('click', function(e){    
+    e.preventDefault()
     //se não for a primeira imagem, decrementa o contador e habilita 
     //o botão de avançar, por que têm mais imagens pra avançar
     if(imagemAtual !== 0) {        
