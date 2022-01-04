@@ -102,11 +102,25 @@ body {
     height: 100%;
     position: absolute; /*explicar o absolute  */
     z-index: -1;
+    filter: brightness(70%); /*explicar o filtro   */
+    opacity: 0;
+    transition: 0.5s ease-out;
 }
 
 .conteudo-principal .paineis .painel.projeto1{
     background-image: url('../imagens/painel5.jpg'); /*explicar voltar a pasta  */
-    filter: brightness(70%); /*explicar o filtro   */
+}
+
+.conteudo-principal .paineis .painel.projeto2{
+    background-image: url('../imagens/painel2.jpg'); /*explicar voltar a pasta  */
+}
+
+.conteudo-principal .paineis .painel.projeto3{
+    background-image: url('../imagens/painel3.jpg'); /*explicar voltar a pasta  */
+}
+
+.conteudo-principal .paineis .painel.mostrar{
+    opacity: 1;
 }
 
 .conteudo-principal .paineis .titulo{        
@@ -123,6 +137,11 @@ body {
     position: absolute; 
     text-indent: 100%; /* serve pra desaparecer o texto */
     overflow: hidden; /* serve pra desaparecer o texto */
+}
+
+.conteudo-principal .paineis .seta.desabilitar{
+    opacity: 0.5;
+    cursor: auto;
 }
 
 .conteudo-principal .paineis .btn-voltar{
@@ -187,7 +206,7 @@ body {
 
 /* QUEM SOMOS */
 
-/* FOOTER */
+/* RODAPÉ */
 
 .rodape{    
     padding: 80px 0 20px 0;
@@ -263,4 +282,4 @@ body {
     text-align: center;    
 }
 
-/* FOOTER */
+/* RODAPÉ */
