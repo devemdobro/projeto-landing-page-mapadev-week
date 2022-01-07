@@ -24,6 +24,7 @@ body {
 }
 
 /*CABEÇALHO*/
+
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -86,6 +87,8 @@ body {
     background-color: #1ED760;
     color: white;
 }
+
+/* CABEÇALHO */
 
 /* PAINEL */
 
@@ -166,6 +169,7 @@ body {
 /* PAINEL */
 
 /* QUEM SOMOS */
+
 .quem-somos {     
     padding: 100px 0;
     background-color: #2941AB;    
@@ -252,11 +256,6 @@ body {
     .rodape .navegacao .menu .item{
         margin: 20px 0;
     }
-}
-
-.rodape .menu{
-    display: flex;
-    justify-content: space-evenly;        
 }
 
 .rodape .redes-sociais{
