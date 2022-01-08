@@ -171,7 +171,6 @@ body {
 /* QUEM SOMOS */
 
 .quem-somos {     
-    padding: 100px 0;
     background-color: #2941AB;    
 }
 
@@ -214,7 +213,7 @@ body {
 .quem-somos .conteudo .informacoes .texto{
     font-size: 20px;    
     line-height: 1.5;
-    color: #1ED760;
+    color: #ffffff;
     font-weight: 400;    
 }
 
