@@ -19,6 +19,10 @@ ul {
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Public Sans', sans-serif;
 }
@@ -33,6 +37,7 @@ body {
     max-width: 1170px;    
     margin: 0 auto;
     flex-wrap: wrap;
+    scroll-behavior: smooth;
 }
 
 @media(max-width: 624px) {
@@ -192,15 +197,19 @@ body {
     .quem-somos .conteudo{
         flex-direction: column;
         text-align: center;
+        padding: 50px 30px;
     }
 
     .quem-somos .conteudo .informacoes{
         margin-bottom: 30px;
     }
 
-    .quem-somos .imagem,
     .quem-somos .conteudo .informacoes {
         width: 100%;
+    }
+
+    .quem-somos .imagem {
+        display: none;
     }
 }
 
@@ -235,8 +244,12 @@ body {
 }
 
 @media(max-width: 940px){
-    .rodape .navegacao{
+    .rodape .navegacao {
         justify-content: center;
+    }
+
+    .rodape .navegacao .logo {
+        margin-bottom: 30px;
     }
 
     .rodape .navegacao .logo,
@@ -246,13 +259,13 @@ body {
         justify-content: center;
     } 
 
-    .rodape .navegacao .menu{
+    .rodape .navegacao .menu {
         margin: 50px 0;
         flex-direction: column;        
         align-items: center;
     }
 
-    .rodape .navegacao .menu .item{
+    .rodape .navegacao .menu .item {
         margin: 20px 0;
     }
 }
