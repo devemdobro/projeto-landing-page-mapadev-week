@@ -283,19 +283,11 @@ body {
     width: 65px;
     border-radius: 50%;
     transition: 0.3s ease-in-out;
+    font-size: 30px;
 }
 
 .rodape .redes-sociais a:hover{
     background-color: #1ED760;
-}
-
-.rodape .redes-sociais a:hover i{
-    
-    color: #fff;
-}
-
-.rodape .redes-sociais .fab{
-    font-size: 30px;
 }
 
 .rodape .copyright{
