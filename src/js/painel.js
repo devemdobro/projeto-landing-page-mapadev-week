@@ -1,4 +1,4 @@
-const imagens = document.querySelectorAll('.painel')
+const imagens = document.querySelectorAll('.imagem-painel')
 const setaVoltar = document.getElementById('btn-voltar')
 const setaAvancar = document.getElementById('btn-avancar')
 let imagemAtual = 0

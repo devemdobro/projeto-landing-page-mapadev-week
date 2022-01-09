@@ -111,7 +111,7 @@ body {
     }
 }
 
-.conteudo-principal .paineis .painel {
+.conteudo-principal .paineis .imagem-painel {
     background-repeat: no-repeat; /*explicar o no-repeat  */
     background-size: cover; /*explicar o cover  */
     background-position: center;
@@ -125,19 +125,19 @@ body {
     font-size: 20px;
 }
 
-.conteudo-principal .paineis .painel.projeto1{
-    background-image: url('../imagens/painel5.jpg'); /*explicar voltar a pasta  */
+.conteudo-principal .paineis .imagem-painel.projeto1{
+    background-image: url('../imagens/painel1.jpg'); /*explicar voltar a pasta  */
 }
 
-.conteudo-principal .paineis .painel.projeto2{
+.conteudo-principal .paineis .imagem-painel.projeto2{
     background-image: url('../imagens/painel2.jpg'); /*explicar voltar a pasta  */
 }
 
-.conteudo-principal .paineis .painel.projeto3{
+.conteudo-principal .paineis .imagem-painel.projeto3{
     background-image: url('../imagens/painel3.jpg'); /*explicar voltar a pasta  */
 }
 
-.conteudo-principal .paineis .painel.mostrar{
+.conteudo-principal .paineis .imagem-painel.mostrar{
     opacity: 1;
 }
 
