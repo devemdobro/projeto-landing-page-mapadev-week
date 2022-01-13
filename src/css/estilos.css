@@ -193,11 +193,11 @@ body {
     width: 60%;    
 }
 
-@media(max-width: 940px){
+@media(max-width: 1200px){
     .quem-somos .conteudo{
         flex-direction: column;
         text-align: center;
-        padding: 50px 30px;
+        padding: 100px 30px;
     }
 
     .quem-somos .conteudo .informacoes{
